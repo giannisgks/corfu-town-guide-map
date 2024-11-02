@@ -1,0 +1,391 @@
+body {
+    background-image: url("corfumap_resized.png");
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+    background-size: auto; /* Keeps the original size of the background image */
+    background-attachment: fixed; /* Keeps the background fixed in place */
+    background-position: right; /* Aligns the background image to the right */
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+    font-weight: bold;
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    overflow: hidden;
+}
+
+
+
+.transition-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 1; /* Initially visible */
+    pointer-events: none; /* Make sure it doesn't block interactions */
+    z-index: 9999;
+    transition: opacity 0.5s ease, filter 0.5s ease;
+    filter: blur(10px); /* Start with blur */
+}
+
+.transition-layer.loaded {
+    opacity: 0;
+    filter: blur(0px);
+}
+
+.transition-layer.active {
+    opacity: 1;
+    filter: blur(10px);
+}
+
+.back-to-start-button {
+    position: absolute; 
+    color: white;
+    left: 20px; 
+    top: 5%; 
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: #2c85d8;
+    text-shadow: 5px 0px 10px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
+    padding: 10px 20px; 
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, transform 0.5s ease;
+    text-decoration: none;
+}
+
+.back-to-start-button:hover {
+    color: #2c85d8;
+    background-color: white;
+    text-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.7);
+}
+
+.spianada-button {
+    position: absolute;
+    padding: 18px 18px;
+    background-color: #ffffff00;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    bottom: 34%;
+    right: 290px;
+}
+
+.spianada-button:hover {
+    background-color: #2130883d;
+    
+}
+
+.old-fortress-button {
+    position: absolute;
+    padding: 18px 18px;
+    background-color: #ffffff00;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    bottom: 39%;
+    right: 145px;
+}
+
+.old-fortress-button:hover {
+    background-color: #2130883d;
+    
+}
+
+.ionian-academy-button {
+    position: absolute;
+    padding: 18px 18px;
+    background-color: #ffffff00;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    bottom: 18%;
+    right: 316px;
+}
+
+.ionian-academy-button:hover{
+    background-color: #2130883d;
+}
+
+.mon-repos-button {
+    position: absolute;
+    padding: 18px 18px;
+    background-color: #ffffff00;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    bottom: 13%;
+    right: 363px;
+}
+
+.mon-repos-button:hover{
+    background-color: #2130883d;
+}
+
+.catholic-church-button {
+    position: absolute;
+    padding: 18px 18px;
+    background-color: #ffffff00;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    bottom: 39%;
+    right: 372px;
+}
+
+.catholic-church-button:hover{
+    background-color: #2130883d;
+}
+
+.music-museum-button {
+    position: absolute;
+    padding: 18px 18px;
+    background-color: #ffffff00;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    bottom: 47%;
+    right: 335px;
+}
+
+.music-museum-button:hover{
+    background-color: #2130883d;
+}
+
+.casa-parlante-button {
+    position: absolute;
+    padding: 18px 18px;
+    background-color: #ffffff00;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    bottom: 47%;
+    right: 355px;
+}
+
+.casa-parlante-button:hover{
+    background-color: #2130883d;
+}
+
+.ionian-banknote-button {
+    position: absolute;
+    padding: 18px 18px;
+    background-color: #ffffff00;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    bottom: 50%;
+    right: 369px;
+}
+
+.ionian-banknote-button:hover{
+    background-color: #2130883d;
+}
+
+.new-fortress-button {
+    position: absolute;
+    padding: 18px 18px;
+    background-color: #ffffff00;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    bottom: 54%;
+    right: 625px;
+}
+
+.new-fortress-button:hover{
+    background-color: #2130883d;
+}
+
+.saint-spyridon-button {
+    position: absolute;
+    padding: 18px 18px;
+    background-color: #ffffff00;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    bottom: 54.8%;
+    right: 345px;
+}
+
+.saint-spyridon-button:hover{
+    background-color: #2130883d;
+}
+
+.asian-arts-button{
+    position: absolute;
+    padding: 18px 18px;
+    background-color: #ffffff00;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    bottom: 57%;
+    right: 268px;
+}
+
+.asian-arts-button:hover{
+    background-color: #2130883d;
+}
+
+.saint-theodora-button {
+    position: absolute;
+    padding: 18px 18px;
+    background-color: #ffffff00;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    bottom: 61%;
+    right: 430px;
+}
+
+.saint-theodora-button:hover{
+    background-color: #2130883d;
+}
+
+.venetian-well-button {
+    position: absolute;
+    padding: 18px 18px;
+    background-color: #ffffff00;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    bottom: 67.5%;
+    right: 395px;
+}
+
+.venetian-well-button:hover{
+    background-color: #2130883d;
+}
+
+.antivouniotisa-button {
+    position: absolute;
+    padding: 18px 18px;
+    background-color: #ffffff00;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    bottom: 75%;
+    right: 365px;
+}
+
+.antivouniotisa-button:hover{
+    background-color: #2130883d;
+}
+
+
+/* Content container styles */
+.content-container {
+    position: absolute;                     /* Allows positioning within the body */
+    left: 25%;                             /* Center horizontally */
+    top: 20%;                              /* Adjust as needed */
+    transform: translateX(-50%);           /* Center alignment */
+    text-align: left;                       /* Center text inside the container */
+    color: #ffffff;                        /* Text color */
+    
+    /* Border Properties */
+    border: 1px solid #2c85d877;          /* Set the border thickness and color */
+    border-radius: 10px;                   /* Round corners */
+    padding: 20px;                         /* Space inside the container */
+    background-color: #2c85d8bc;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.7); /* Shadow for depth */
+    
+    overflow-y: auto;                      /* Add vertical scrollbar when content exceeds height */
+    height: 70%;                           /* Adjust height as needed */
+    width: 80%;                            /* Set a width for the container */
+    max-width: 500px;                     /* Optional: set a max width for larger screens */
+    opacity: 0;                            /* Start invisible */
+    visibility: hidden;                    /* Hidden by default */
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* Transition for opacity and visibility */
+}
+
+/* Media Query for Responsiveness */
+@media screen and (max-width: 600px) {
+    .content-container {
+        width: 90%;                       /* Adjust width for smaller screens */
+    }
+}
+
+.content-container::-webkit-scrollbar {
+    width: 10px;                          /* Set the width of the scrollbar */
+}
+
+/* Track */
+.content-container::-webkit-scrollbar-track {
+    background: transparent;              /* Set the background color of the scrollbar track */
+}
+
+/* Handle */
+.content-container::-webkit-scrollbar-thumb {
+    background: #cacacaa8;                /* Set the color of the scrollbar handle */
+    border-radius: 6px;                   /* Set the border radius of the scrollbar handle */
+}
+
+/* Handle on hover */
+.content-container::-webkit-scrollbar-thumb:hover {
+    background: #aaaaaad7;                /* Set the color of the scrollbar handle on hover */
+}
+
+.content-container.visible {
+    opacity: 1;                            /* Fully visible */
+    visibility: visible;                    /* Set to visible */
+}
+
+
+
+h2 {
+    font-size: 40px;
+    text-shadow: 5px 0px 10px rgba(0, 0, 0, 0.8);
+    margin-bottom: 17px;                  /* Space below the heading */
+}
+
+h3 {
+    font-size: 17px;
+    text-shadow: 5px 0px 10px rgba(0, 0, 0, 0.9);
+    margin-bottom: 17px;                  /* Space below the subheading */
+}
+
+.content-image {
+    width: 100%;            /* Set the width to 50% of the container */
+    height: auto;         /* Maintain the aspect ratio */
+    border-radius: 10px;  /* Round the corners */
+    margin-bottom: 20px;  /* Space below the image */
+    transition: transform 0.3s ease; /* Smooth scaling effect on hover */
+}
+
+.content-image:hover {
+    transform: scale(1.05); /* Slightly scale up the image on hover */
+}
+
+.audio{
+    margin-bottom: 20px;
+}
