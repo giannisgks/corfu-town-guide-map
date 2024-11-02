@@ -114,50 +114,49 @@ h1 {
     
 }
 
-@media (max-width: 390px) {
+@media (min-width: 1300px) {
 
     body{
-        background-size: 100%;
+        background-size: 73%;
         overflow-x: hidden;
     }
 
     h1 {
-        font-size: 40px;
-        top: 7%;
-        left: 20px
+        font-size: 80px;
+        left: 30px;
+    top: 35%;
     }
 
     .start-now-button {
-        left: 20px; 
-        top: 71%; 
-        font-size: 13px;
+        left: 40px; 
+        top: 60%; 
+        font-size: 17px;
         border-radius: 20px;
-        padding: 10px 12px; 
+        padding: 10px 20px;
         
     }
 
     .about-button {
-        left: 20px; 
-        top: 80%; 
-        font-size: 13px;
+        left: 40px; 
+        top: 70%; 
+        font-size: 17px;
         border-radius: 20px;
-        padding: 10px 12px; 
+        padding: 10px 20px; 
         
     }
 
     .copyright{
-        bottom: 15px;
-    }
-
-    .image-copyright {
-        font-size: 6.5px;
-    }
-    
-    .image-copyright {
-        font-size: 6.5px;
-        content: "map source:\A https://i.etsystatic.com/8154243/r/il/3a8544/822567719/il_fullxfull.822567719_c7ol.jpg";
-        white-space: pre; 
+        font-size: 12px;
         left: 10px;
+        bottom: 12px;
+    }
+        
+    .image-copyright{
+        position: absolute;
+        color: rgb(192, 192, 192);
+        font-size: 12px;
+        left: 10px;
+        bottom: -03px;
     }
     
     
