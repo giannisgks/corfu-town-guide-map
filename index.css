@@ -2,7 +2,7 @@ body{
     background-color: white;
     background-size: cover;
     background-image: url("corfumap.jpg");
-    background-size: 73%;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: right;
@@ -37,27 +37,27 @@ body{
 
 h1 {
     position: absolute;
-    font-size: 80px;
-    color: #2c85d8;  
+    font-size: 120px;
+    color: #2c85d8;
     left: 30px;
-    top: 35%;
-    transform: translateY(-50%); 
-    text-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);  
+    top: 25%;
+    transform: translateY(-50%);
+    text-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 
 .start-now-button {
-    position: absolute; 
+    position: absolute;
     color: white;
-    left: 40px; 
-    top: 60%; 
-    font-size: 17px;
+    left: 40px;
+    top: 70%;
+    font-size: 40px;
     font-weight: bold;
-    border-radius: 20px;
+    border-radius: 40px;
     background-color: #2c85d8;
     text-shadow: 5px 0px 10px rgba(0, 0, 0, 0.7);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
-    padding: 10px 20px; 
+    padding: 20px 40px;
     cursor: pointer;
     border: none;
     transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, transform 0.5s ease;
@@ -75,14 +75,14 @@ h1 {
     position: absolute; 
     color: white;
     left: 40px; 
-    top: 70%; 
-    font-size: 17px;
+    top: 77%; 
+    font-size: 40px;
     font-weight: bold;
-    border-radius: 20px;
+    border-radius: 40px;
     background-color: #2c85d8;
     text-shadow: 5px 0px 10px rgba(0, 0, 0, 0.7);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
-    padding: 10px 20px; 
+    padding: 20px 40px;
     cursor: pointer;
     border: none;
     transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, transform 0.5s ease;
@@ -99,20 +99,22 @@ h1 {
 .image-copyright{
     position: absolute;
     color: rgb(192, 192, 192);
-    font-size: 10px;
-    right: 5px;
-    bottom: 3px;
+    font-size: 25px;
+    left: 30px;
+    bottom: -150px;
+    
 }
 
 .copyright{
     position: absolute;
     color: rgb(0, 0, 0,0.8);
-    font-size: 12px;
-    left: 10px;
-    bottom: 3px;
+    font-size: 25px;
+    left: 30px;
+    bottom: -60px;
+    
 }
 
-@media (max-width: 480px) {
+@media (max-width: 390px) {
 
     body{
         background-size: 100%;
@@ -121,7 +123,7 @@ h1 {
 
     h1 {
         font-size: 40px;
-        top: 17%;
+        top: 7%;
         left: 20px
     }
 
