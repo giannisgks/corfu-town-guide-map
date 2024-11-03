@@ -40,7 +40,7 @@ h1 {
     font-size: 120px;
     color: #2c85d8;
     left: 30px;
-    top: 25%;
+    top: 15%;
     transform: translateY(-50%);
     text-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
 }
@@ -50,7 +50,7 @@ h1 {
     position: absolute;
     color: white;
     left: 40px;
-    top: 70%;
+    top: 77%;
     font-size: 40px;
     font-weight: bold;
     border-radius: 40px;
@@ -75,7 +75,7 @@ h1 {
     position: absolute; 
     color: white;
     left: 40px; 
-    top: 77%; 
+    top: 86%; 
     font-size: 40px;
     font-weight: bold;
     border-radius: 40px;
@@ -99,7 +99,7 @@ h1 {
 .image-copyright{
     position: absolute;
     color: rgb(192, 192, 192);
-    font-size: 25px;
+    font-size: 22px;
     left: 30px;
     bottom: -150px;
     
