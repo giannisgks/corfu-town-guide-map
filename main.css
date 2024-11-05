@@ -7,8 +7,8 @@ body {
     font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
     font-weight: bold;
     margin: 10; 
-    padding: ;
     overflow: hidden;
+    overflow-y: scroll;
 }
 
 .transition-layer {
@@ -81,7 +81,7 @@ h1 {
     border-radius: 35px;
     cursor: pointer;
     font-size: 12px;
-    bottom: 40%;
+    bottom: 35%;
     right: 385px;
 }
 
