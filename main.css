@@ -391,7 +391,7 @@ h3 {
 .content-image {
     width: 100%;            /* Set the width to 50% of the container */
     border-radius: 10px;  /* Round the corners */
-    margin-bottom: 20px;  /* Space below the image */
+    margin-top: 25px;
     transition: transform 0.3s ease; /* Smooth scaling effect on hover */
 }
 
