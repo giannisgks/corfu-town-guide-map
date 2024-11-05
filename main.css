@@ -74,19 +74,19 @@ h1 {
 
 .spianada-button {
     position: absolute;
-    padding: 18px 18px;
-    background-color: #ffffff00;
+    padding: 35px 35px;
+    background-color: #001dff00;
     color: white;
     border: none;
-    border-radius: 20px;
+    border-radius: 35px;
     cursor: pointer;
     font-size: 12px;
-    bottom: 34%;
-    right: 290px;
+    bottom: 45.2%;
+    right: 388px;
 }
 
 .spianada-button:hover {
-    background-color: #2130883d;
+    background-color: #21308800;
     
 }
 
