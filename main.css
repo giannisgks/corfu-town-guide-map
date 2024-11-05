@@ -9,6 +9,7 @@ body {
     margin: 10; 
     padding: ;
     overflow: hidden;
+    overflow-y: scroll;
 }
 
 .transition-layer {
