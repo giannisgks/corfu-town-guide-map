@@ -74,9 +74,9 @@ body {
     
     /* Border Properties */
     border: 1px solid #2c85d877;          /* Set the border thickness and color */
-    border-radius: 10px;                   /* Round corners */
+    border-radius: 40px;                   /* Round corners */
     padding: 20px;                         /* Space inside the container */
-    background-color: rgba(204, 204, 204, 0.411); /* Semi-transparent background */
+    background-color: #2c85d8de;
     box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.7); /* Shadow for depth */
     
     overflow-y: auto;                      /* Add vertical scrollbar when content exceeds height */
@@ -120,8 +120,8 @@ h2 {
 
 h3 {
     font-size: 20px;
-    text-shadow: 5px 0px 10px rgba(0, 0, 0, 0.8);
-    margin-bottom: 20px;                  /* Space below the subheading */
+    text-shadow: 5px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;                
 }
 
 
