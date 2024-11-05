@@ -62,8 +62,8 @@ body {
 }
 
 h1 {
-    color: #658aac;
-    position: fixed;         /* Keep h1 in a fixed position relative to the viewport */
+    position: absolute;
+    color: #658aac;      
     top: 20%;                /* Position roughly 75% from the top */
     left: 40px;
     right: 150px;
