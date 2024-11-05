@@ -316,8 +316,8 @@ h1 {
 /* Content container styles */
 .content-container {
     position: absolute;                     /* Allows positioning within the body */
-    left: 25%;                             /* Center horizontally */
-    top: 20%;                              /* Adjust as needed */
+    left: 43%;                             /* Center horizontally */
+    top: 66%;                              /* Adjust as needed */
     transform: translateX(-50%);           /* Center alignment */
     text-align: left;                       /* Center text inside the container */
     color: #ffffff;                        /* Text color */
@@ -332,7 +332,7 @@ h1 {
     overflow-y: auto;                      /* Add vertical scrollbar when content exceeds height */
     height: 70%;                           /* Adjust height as needed */
     width: 80%;                            /* Set a width for the container */
-    max-width: 500px;                     /* Optional: set a max width for larger screens */
+    max-width: 700px;                     /* Optional: set a max width for larger screens */
     opacity: 0;                            /* Start invisible */
     visibility: hidden;                    /* Hidden by default */
     transition: opacity 0.5s ease, visibility 0.5s ease; /* Transition for opacity and visibility */
@@ -397,5 +397,6 @@ h3 {
 }
 
 .audio{
-    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
