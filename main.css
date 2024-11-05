@@ -75,18 +75,18 @@ h1 {
 .spianada-button {
     position: absolute;
     padding: 35px 35px;
-    background-color: #001dff00;
-    color: white;
+    background-color: #ff0000;
+    color: #ff0000;
     border: none;
     border-radius: 35px;
     cursor: pointer;
     font-size: 12px;
-    bottom: 43%;
-    right: 388px;
+    bottom: 45%;
+    right: 385px;
 }
 
 .spianada-button:hover {
-    background-color: #21308800;
+    background-color: #0025ff;
     
 }
 
@@ -317,7 +317,7 @@ h1 {
 .content-container {
     position: absolute;                     /* Allows positioning within the body */
     left: 43%;                             /* Center horizontally */
-    top: 66%;                              /* Adjust as needed */
+    top: 86%;                              /* Adjust as needed */
     transform: translateX(-50%);           /* Center alignment */
     text-align: left;                       /* Center text inside the container */
     color: #ffffff;                        /* Text color */
