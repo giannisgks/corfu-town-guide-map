@@ -398,3 +398,21 @@ h3 {
 .content-image:hover {
     transform: scale(1.05); /* Slightly scale up the image on hover */
 }
+
+@media (min-width: 1000px) {
+    body::before {
+        content: 'Coming soon on desktop.';               /* Empty content to act as overlay */
+        position: fixed;           /* Fixed position to cover entire viewport */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;   /* White overlay background */
+        z-index: 9999;             /* High z-index to overlay all content */
+    }
+    
+    /* Optional: Hide any scrollbars if necessary */
+    body {
+        overflow: hidden;
+    }
+}
