@@ -383,10 +383,13 @@ h3 {
     text-shadow: 5px 0px 10px rgba(0, 0, 0, 0.9);
     margin-bottom: 17px;                  /* Space below the subheading */
 }
+.audio{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
 .content-image {
     width: 100%;            /* Set the width to 50% of the container */
-    height: auto;         /* Maintain the aspect ratio */
     border-radius: 10px;  /* Round the corners */
     margin-bottom: 20px;  /* Space below the image */
     transition: transform 0.3s ease; /* Smooth scaling effect on hover */
@@ -394,9 +397,4 @@ h3 {
 
 .content-image:hover {
     transform: scale(1.05); /* Slightly scale up the image on hover */
-}
-
-.audio{
-    margin-top: 50px;
-    margin-bottom: 50px;
 }
