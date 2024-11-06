@@ -72,12 +72,11 @@ h1 {
     z-index: 1000;           /* Ensure it appears above other elements, but below higher z-index items like the transition layer */
 }
 
-/* Shared styling for all monument buttons */
 .monument-button {
     position: absolute;
     padding: 35px 35px;
-    background-color: #ff0000;
-    color: #ff0000;
+    background-color: #2a00ff3b;
+    color: #2a00ff3b;
     border: none;
     border-radius: 35px;
     cursor: pointer;
@@ -86,7 +85,7 @@ h1 {
 }
 
 .monument-button:hover {
-    background-color: #0025ff;
+    background-color: #2a00ff82;
 }
 
 .spianada-button {
