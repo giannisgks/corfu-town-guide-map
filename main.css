@@ -75,8 +75,8 @@ h1 {
 .monument-button {
     position: absolute;
     padding: 35px 35px;
-    background-color: #2a00ff3b;
-    color: #2a00ff3b;
+    background-color: #ffffff00;
+    color: #2a00ff00;
     border: none;
     border-radius: 35px;
     cursor: pointer;
@@ -85,7 +85,7 @@ h1 {
 }
 
 .monument-button:hover {
-    background-color: #2a00ff82;
+    background-color: #2a00ff00;
 }
 
 .spianada-button {
