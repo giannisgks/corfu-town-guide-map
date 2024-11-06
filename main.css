@@ -87,6 +87,11 @@ h1 {
     background-color: #2a00ff00;
 }
 
+.monument-button:focus {
+    outline: none;
+    background-color: transparent;
+}
+
 .spianada-button {
     bottom: 35%;
     right: 385px;
