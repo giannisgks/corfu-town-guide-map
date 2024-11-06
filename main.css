@@ -72,7 +72,8 @@ h1 {
     z-index: 1000;           /* Ensure it appears above other elements, but below higher z-index items like the transition layer */
 }
 
-.spianada-button {
+/* Shared styling for all monument buttons */
+.monument-button {
     position: absolute;
     padding: 35px 35px;
     background-color: #ff0000;
@@ -81,235 +82,81 @@ h1 {
     border-radius: 35px;
     cursor: pointer;
     font-size: 12px;
+    transition: background-color 0.5s ease, transform 0.3s ease;
+}
+
+.monument-button:hover {
+    background-color: #0025ff;
+}
+
+.spianada-button {
     bottom: 35%;
     right: 385px;
 }
 
-.spianada-button:hover {
-    background-color: #0025ff;
-    
-}
-
 .old-fortress-button {
-    position: absolute;
-    padding: 35px 35px;
-    background-color: #ff0000;
-    color: white;
-    border: none;
-    border-radius: 35px;
-    cursor: pointer;
-    font-size: 12px;
     bottom: 38%;
     right: 175px;
 }
 
-.old-fortress-button:hover {
-    background-color: #0025ff;
-    
-}
-
 .ionian-academy-button {
-    position: absolute;
-    padding: 18px 18px;
-    background-color: #ffffff00;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 12px;
     bottom: 18%;
     right: 316px;
 }
 
-.ionian-academy-button:hover{
-    background-color: #2130883d;
-}
-
 .mon-repos-button {
-    position: absolute;
-    padding: 18px 18px;
-    background-color: #ffffff00;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 12px;
     bottom: 13%;
     right: 363px;
 }
 
-.mon-repos-button:hover{
-    background-color: #2130883d;
-}
-
 .catholic-church-button {
-    position: absolute;
-    padding: 18px 18px;
-    background-color: #ffffff00;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 12px;
     bottom: 39%;
     right: 372px;
 }
 
-.catholic-church-button:hover{
-    background-color: #2130883d;
-}
-
 .music-museum-button {
-    position: absolute;
-    padding: 18px 18px;
-    background-color: #ffffff00;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 12px;
     bottom: 47%;
     right: 335px;
 }
 
-.music-museum-button:hover{
-    background-color: #2130883d;
-}
-
 .casa-parlante-button {
-    position: absolute;
-    padding: 18px 18px;
-    background-color: #ffffff00;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 12px;
     bottom: 47%;
     right: 355px;
 }
 
-.casa-parlante-button:hover{
-    background-color: #2130883d;
-}
-
 .ionian-banknote-button {
-    position: absolute;
-    padding: 18px 18px;
-    background-color: #ffffff00;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 12px;
     bottom: 50%;
     right: 369px;
 }
 
-.ionian-banknote-button:hover{
-    background-color: #2130883d;
-}
-
 .new-fortress-button {
-    position: absolute;
-    padding: 18px 18px;
-    background-color: #ffffff00;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 12px;
     bottom: 54%;
     right: 625px;
 }
 
-.new-fortress-button:hover{
-    background-color: #2130883d;
-}
-
 .saint-spyridon-button {
-    position: absolute;
-    padding: 18px 18px;
-    background-color: #ffffff00;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 12px;
     bottom: 54.8%;
     right: 345px;
 }
 
-.saint-spyridon-button:hover{
-    background-color: #2130883d;
-}
-
-.asian-arts-button{
-    position: absolute;
-    padding: 18px 18px;
-    background-color: #ffffff00;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 12px;
+.asian-arts-button {
     bottom: 57%;
     right: 268px;
 }
 
-.asian-arts-button:hover{
-    background-color: #2130883d;
-}
-
 .saint-theodora-button {
-    position: absolute;
-    padding: 18px 18px;
-    background-color: #ffffff00;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 12px;
     bottom: 61%;
     right: 430px;
 }
 
-.saint-theodora-button:hover{
-    background-color: #2130883d;
-}
-
 .venetian-well-button {
-    position: absolute;
-    padding: 18px 18px;
-    background-color: #ffffff00;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 12px;
     bottom: 67.5%;
     right: 395px;
 }
 
-.venetian-well-button:hover{
-    background-color: #2130883d;
-}
-
 .antivouniotisa-button {
-    position: absolute;
-    padding: 18px 18px;
-    background-color: #ffffff00;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 12px;
     bottom: 75%;
     right: 365px;
-}
-
-.antivouniotisa-button:hover{
-    background-color: #2130883d;
 }
 
 
