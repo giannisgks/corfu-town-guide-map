@@ -92,19 +92,19 @@ h1 {
 
 .old-fortress-button {
     position: absolute;
-    padding: 18px 18px;
-    background-color: #ffffff00;
-    color: white;
+    padding: 35px 35px;
+    background-color: #ff0000;
+    color: #ff0000;
     border: none;
-    border-radius: 20px;
+    border-radius: 35px;
     cursor: pointer;
     font-size: 12px;
     bottom: 39%;
-    right: 145px;
+    right: 175px;
 }
 
 .old-fortress-button:hover {
-    background-color: #2130883d;
+    background-color: #0025ff;
     
 }
 
