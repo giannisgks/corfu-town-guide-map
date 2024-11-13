@@ -32,14 +32,14 @@ body{
 
 .container {
     display: flex;
-    justify-content: space-between;
     align-items: flex-start; /* Align items to the top */
-    gap: 5%; /* Space between info-box and SVG */
-    margin-left: 30%; /* Optional margin on top */
+    margin-left: 0%; /* Optional margin on top */
 }
 
 svg {
-    height: auto;   /* Maintains aspect ratio */
+    scale: 1.5;
+    height:550px;
+    margin-left:-17%;
 }
 
 .back-to-start-button {
@@ -70,10 +70,10 @@ svg {
 h1 {
     position: absolute;
     color: #658aac75;      
-    top: 3%;                /* Position roughly 75% from the top */
-    left: 14%;
-    width: 40%;
-    font-size: 20px;         /* Font size for better visibility */
+    top: 12%;                /* Position roughly 75% from the top */
+    left: 5%;
+    width: 80%;
+    font-size: 15px;         /* Font size for better visibility */
     font-weight: bold;       /* Ensure it's bold for emphasis */
     font-style: italic;
     z-index: 1000;           /* Ensure it appears above other elements, but below higher z-index items like the transition layer */
@@ -93,37 +93,11 @@ h1 {
     stroke-width: 3px;
 }
 
-/* Styling for the info box at the bottom */
-.info-box {
-    position: absolute;                     /* Allows positioning within the body */
-    left: 50%;                             /* Center horizontally */
-    top: 70%;                              /* Adjust as needed */
-    transform: translateX(-50%);           /* Center alignment */
-    text-align: left;                    /* Center text inside the container */
-    color: #ffffff;                        /* Text color */
-    
-    /* Border Properties */
-    border: 1px solid #2c85d877;          /* Set the border thickness and color */
-    border-radius: 10px;                   /* Round corners */
-    padding: 20px;                         /* Space inside the container */
-    background-color: rgba(204, 204, 204, 0.411); /* Semi-transparent background */
-    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.7); /* Shadow for depth */
-    
-    overflow-y: auto;                      /* Add vertical scrollbar when content exceeds height */
-    height: 70%;                           /* Adjust height as needed */
-    width: 80%;                            /* Set a width for the container */
-    max-width: 1000px; 
-}
-
-/* When the info box is visible */
-.info-box.visible {
-    display: block;
-}
-
 .content-container {
+    font-size: 15px;
     position: absolute;                     /* Positioning within the body */
-    left: 25%;                             /* Center horizontally */
-    top: 20%;                              /* Adjust as needed */
+    left: 50%;                             /* Center horizontally */
+    top: 50%;                              /* Adjust as needed */
     transform: translateX(-50%);            /* Center alignment */
     text-align: left;                       /* Center text inside the container */
     color: #ffffff;                        /* Text color */
@@ -136,11 +110,8 @@ h1 {
     box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.7); /* Shadow for depth */
     
     overflow-y: auto;                       /* Add vertical scroll if content exceeds height */
-    height: 70%;                            /* Adjust height */
-    width: 80%;                             /* Adjust width */
-    max-width: 500px;                       /* Max width for larger screens */
-    
-    /* Initially invisible */
+    height: 60%;                            /* Adjust height */
+    width: 75%;                             /* Adjust width */                      /* Max width for larger screens */
     opacity: 0;
     visibility: hidden;                     /* Prevent interaction when invisible */
     
