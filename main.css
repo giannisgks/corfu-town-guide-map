@@ -1,14 +1,8 @@
-body {
-    background-image: url("corfumap_resized.png");
-    background-repeat: no-repeat;
-    background-size: 140%; 
-    background-attachment: fixed; 
-    background-position: right 30%; 
+body{
+    background-color: white;
     font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
     font-weight: bold;
-    margin: 10; 
-    overflow: hidden;
-    overflow-y: scroll;
+
 }
 
 .transition-layer {
@@ -18,11 +12,11 @@ body {
     width: 100%;
     height: 100%;
     background-color: white;
-    opacity: 1; 
-    pointer-events: none; 
+    opacity: 1; /* Initially visible */
+    pointer-events: none; /* Make sure it doesn't block interactions */
     z-index: 9999;
-    transition: opacity 0.5s ease, filter 0.5s ease;
-    filter: blur(10px); 
+    transition: opacity 0.3s ease, filter 0.3s ease;
+    filter: blur(10px); /* Start with blur */
 }
 
 .transition-layer.loaded {
@@ -35,24 +29,37 @@ body {
     filter: blur(10px);
 }
 
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+    gap: 5%; /* Space between info-box and SVG */
+    margin-left: 30%; /* Optional margin on top */
+}
+
+svg {
+    height: auto;   /* Maintains aspect ratio */
+}
+
 .back-to-start-button {
     position: absolute; 
     color: white;
-    left: 40px; 
-    top: 10%; 
+    left: 20px; 
+    top: 5%; 
     font-size: 17px;
-    font-size: 40px;
     font-weight: bold;
-    border-radius: 40px;
+    border-radius: 20px;
     background-color: #2c85d8;
     text-shadow: 5px 0px 10px rgba(0, 0, 0, 0.7);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
-    padding: 20px 40px;
+    padding: 10px 20px; 
     cursor: pointer;
     border: none;
     transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, transform 0.5s ease;
     text-decoration: none;
 }
+
 .back-to-start-button:hover {
     color: #2c85d8;
     background-color: white;
@@ -62,222 +69,87 @@ body {
 
 h1 {
     position: absolute;
-    color: #658aac;      
-    top: 20%;                /* Position roughly 75% from the top */
-    left: 40px;
-    right: 150px;
-    font-size: 40px;         /* Font size for better visibility */
+    color: #658aac75;      
+    top: 3%;                /* Position roughly 75% from the top */
+    left: 14%;
+    width: 40%;
+    font-size: 20px;         /* Font size for better visibility */
     font-weight: bold;       /* Ensure it's bold for emphasis */
     font-style: italic;
     z-index: 1000;           /* Ensure it appears above other elements, but below higher z-index items like the transition layer */
 }
 
-.monument-button {
-    position: absolute;
-    padding: 35px 35px;
-    background-color: #ffffff00;
-    color: #2a00ff00;
-    border: none;
-    border-radius: 35px;
-    cursor: pointer;
-    font-size: 12px;
+/* Style for the SVG shapes */
+.image-mapper-shape {
+    fill: rgba(53, 41, 41, 0); /* Semi-transparent red for visibility */
+    stroke-width: 2px;
+    transition: fill 0.2s ease;
 }
 
-.monument-button {
-    appearance: none;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    -webkit-tap-highlight-color: transparent;
-    user-select: none;
+/* Hover effect */
+.image-mapper-shape:hover {
+    fill: rgba(50, 149, 255, 0.512);
+    stroke: rgba(255, 255, 0, 0);
+    stroke-width: 3px;
 }
 
-.monument-button:focus, 
-.monument-button:active {
-    outline: none;
-    background-color: transparent;
-    box-shadow: none;
-}
-
-.spianada-button {
-    bottom: 35%;
-    right: 385px;
-}
-
-.old-fortress-button {
-    bottom: 37.3%;
-    right: 180px;
-}
-
-.ionian-academy-button {
-    bottom: 26%;
-    right: 410px;
-}
-
-.mon-repos-button {
-    bottom: 24%;
-    right: 470px;
-}
-
-.catholic-church-button {
-    bottom: 37.5%;
-    right: 482px;
-}
-
-.music-museum-button {
-    bottom: 41%;
-    right: 442px;
-}
-
-.casa-parlante-button {
-    bottom: 40%;
-    right: 482px;
-}
-
-.ionian-banknote-button {
-    bottom: 43%;
-    right: 495px;
-}
-
-.new-fortress-button {
-    bottom: 45.3%;
-    right: 845px;
-}
-
-.saint-spyridon-button {
-    bottom: 46%;
-    right: 450px;
-}
-
-.asian-arts-button {
-    bottom: 47%;
-    right: 348px;
-}
-
-.saint-theodora-button {
-    bottom: 49%;
-    right: 570px;
-}
-
-.venetian-well-button {
-    bottom: 52.5%;
-    right: 520px;
-}
-
-.antivouniotisa-button {
-    bottom: 55.5%;
-    right: 480px;
-}
-
-
-/* Content container styles */
-.content-container {
+/* Styling for the info box at the bottom */
+.info-box {
     position: absolute;                     /* Allows positioning within the body */
-    left: 43%;                             /* Center horizontally */
-    top: 86%;                              /* Adjust as needed */
+    left: 50%;                             /* Center horizontally */
+    top: 70%;                              /* Adjust as needed */
     transform: translateX(-50%);           /* Center alignment */
-    text-align: left;                       /* Center text inside the container */
+    text-align: left;                    /* Center text inside the container */
     color: #ffffff;                        /* Text color */
     
     /* Border Properties */
     border: 1px solid #2c85d877;          /* Set the border thickness and color */
     border-radius: 10px;                   /* Round corners */
     padding: 20px;                         /* Space inside the container */
-    background-color: #2c85d8bc;
+    background-color: rgba(204, 204, 204, 0.411); /* Semi-transparent background */
     box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.7); /* Shadow for depth */
     
     overflow-y: auto;                      /* Add vertical scrollbar when content exceeds height */
     height: 70%;                           /* Adjust height as needed */
     width: 80%;                            /* Set a width for the container */
-    max-width: 700px;                     /* Optional: set a max width for larger screens */
-    opacity: 0;                            /* Start invisible */
-    visibility: hidden;                    /* Hidden by default */
-    transition: opacity 0.5s ease, visibility 0.5s ease; /* Transition for opacity and visibility */
+    max-width: 1000px; 
 }
 
-/* Media Query for Responsiveness */
-@media screen and (max-width: 600px) {
-    .content-container {
-        width: 90%;                       /* Adjust width for smaller screens */
-    }
+/* When the info box is visible */
+.info-box.visible {
+    display: block;
 }
 
-.content-container::-webkit-scrollbar {
-    width: 10px;                          /* Set the width of the scrollbar */
-}
-
-/* Track */
-.content-container::-webkit-scrollbar-track {
-    background: transparent;              /* Set the background color of the scrollbar track */
-}
-
-/* Handle */
-.content-container::-webkit-scrollbar-thumb {
-    background: #cacacaa8;                /* Set the color of the scrollbar handle */
-    border-radius: 6px;                   /* Set the border radius of the scrollbar handle */
-}
-
-/* Handle on hover */
-.content-container::-webkit-scrollbar-thumb:hover {
-    background: #aaaaaad7;                /* Set the color of the scrollbar handle on hover */
+.content-container {
+    position: absolute;                     /* Positioning within the body */
+    left: 25%;                             /* Center horizontally */
+    top: 20%;                              /* Adjust as needed */
+    transform: translateX(-50%);            /* Center alignment */
+    text-align: left;                       /* Center text inside the container */
+    color: #ffffff;                        /* Text color */
+    
+    /* Border Properties */
+    border: 1px solid #2c85d877;           /* Border thickness and color */
+    border-radius: 10px;                    /* Rounded corners */
+    padding: 20px;                          /* Padding for spacing */
+    background-color: #2c85d8bc;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.7); /* Shadow for depth */
+    
+    overflow-y: auto;                       /* Add vertical scroll if content exceeds height */
+    height: 70%;                            /* Adjust height */
+    width: 80%;                             /* Adjust width */
+    max-width: 500px;                       /* Max width for larger screens */
+    
+    /* Initially invisible */
+    opacity: 0;
+    visibility: hidden;                     /* Prevent interaction when invisible */
+    
+    /* Transition properties for smooth fade-in/out */
+    transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
 .content-container.visible {
-    opacity: 1;                            /* Fully visible */
-    visibility: visible;                    /* Set to visible */
+    opacity: 1;
+    visibility: visible;                    /* Make it visible when active */
+    z-index: 1000;                          /* Ensure it appears on top of other content */
 }
-
-
-
-h2 {
-    font-size: 40px;
-    text-shadow: 5px 0px 10px rgba(0, 0, 0, 0.8);
-    margin-bottom: 17px;                  /* Space below the heading */
-}
-
-h3 {
-    font-size: 17px;
-    text-shadow: 5px 0px 10px rgba(0, 0, 0, 0.9);
-    margin-bottom: 17px;                  /* Space below the subheading */
-}
-.audio{
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.content-image {
-    width: 100%;            /* Set the width to 50% of the container */
-    border-radius: 10px;  /* Round the corners */
-    margin-top: 25px;
-    transition: transform 0.3s ease; /* Smooth scaling effect on hover */
-}
-
-.content-image:hover {
-    transform: scale(1.05); /* Slightly scale up the image on hover */
-}
-
-/* White overlay for larger screens only */
-@media (min-width: 1000px) {
-    body::before {
-        content: 'Coming soon on desktop.';
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: white;
-        color: black;                 /* Text color for better contrast */
-        font-size: 24px;              /* Font size for visibility */
-        font-family: Arial, sans-serif;
-        z-index: 9999;                /* Ensure overlay is on top */
-    }
-
-    /* Hide body content and scrollbars when overlay is active */
-    body {
-        overflow: hidden;
-    }
-}
-
