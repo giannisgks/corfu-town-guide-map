@@ -58,6 +58,7 @@ svg {
     border: none;
     transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, transform 0.5s ease;
     text-decoration: none;
+    z-index: 9998;
 }
 
 .back-to-start-button:hover {
