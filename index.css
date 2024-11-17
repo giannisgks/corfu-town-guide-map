@@ -120,23 +120,6 @@ h1 {
     
 }
 
-@media (min-width: 700px) {
-
-    .start-now-button {
-        font-size: 23px;
-        border-radius: 22px;
-        padding: 11px 22px;
-    }
-
-    .about-button{
-        font-size: 23px;
-        border-radius: 22px;
-        padding: 11px 22px;
-    }
-}
-
-
-
 @media (min-width: 1000px) {
 
     body{
