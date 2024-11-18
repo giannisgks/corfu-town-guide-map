@@ -1,8 +1,14 @@
+
+html, body {
+    overflow: hidden;
+}
+
+
 body{
     background-color: white;
     background-size: cover;
     background-image: url("corfumap.jpg");
-    background-size: 73%;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: right;
@@ -21,7 +27,7 @@ body{
     opacity: 1; /* Initially visible */
     pointer-events: none; /* Make sure it doesn't block interactions */
     z-index: 9999;
-    transition: opacity 0.3s ease, filter 0.3s ease;
+    transition: opacity 0.5s ease, filter 0.5s ease;
     filter: blur(10px); /* Start with blur */
 }
 
@@ -37,27 +43,27 @@ body{
 
 h1 {
     position: absolute;
-    font-size: 80px;
-    color: #2c85d8;  
+    font-size: 120px;
+    color: #2c85d8;
     left: 30px;
-    top: 35%;
-    transform: translateY(-50%); 
-    text-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);  
+    top: 15%;
+    transform: translateY(-50%);
+    text-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 
 .start-now-button {
-    position: absolute; 
+    position: absolute;
     color: white;
-    left: 40px; 
-    top: 60%; 
-    font-size: 17px;
+    left: 40px;
+    top: 73%;
+    font-size: 40px;
     font-weight: bold;
-    border-radius: 20px;
+    border-radius: 40px;
     background-color: #2c85d8;
     text-shadow: 5px 0px 10px rgba(0, 0, 0, 0.7);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
-    padding: 10px 20px; 
+    padding: 20px 40px;
     cursor: pointer;
     border: none;
     transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, transform 0.5s ease;
@@ -75,14 +81,14 @@ h1 {
     position: absolute; 
     color: white;
     left: 40px; 
-    top: 70%; 
-    font-size: 17px;
+    top: 81%; 
+    font-size: 40px;
     font-weight: bold;
-    border-radius: 20px;
+    border-radius: 40px;
     background-color: #2c85d8;
     text-shadow: 5px 0px 10px rgba(0, 0, 0, 0.7);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
-    padding: 10px 20px; 
+    padding: 20px 40px;
     cursor: pointer;
     border: none;
     transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, transform 0.5s ease;
@@ -99,65 +105,64 @@ h1 {
 .image-copyright{
     position: absolute;
     color: rgb(192, 192, 192);
-    font-size: 10px;
-    right: 5px;
-    bottom: 3px;
+    font-size: 21px;
+    left: 30px;
+    bottom: 10px;
+    
 }
 
 .copyright{
     position: absolute;
     color: rgb(0, 0, 0,0.8);
-    font-size: 12px;
-    left: 10px;
-    bottom: 3px;
+    font-size: 25px;
+    left: 30px;
+    bottom: 57px;
+    
 }
 
-@media (max-width: 480px) {
+@media (min-width: 1300px) {
 
     body{
-        background-size: 100%;
+        background-size: 73%;
         overflow-x: hidden;
     }
 
     h1 {
-        font-size: 40px;
-        top: 17%;
-        left: 20px
+        font-size: 80px;
+        left: 30px;
+    top: 35%;
     }
 
     .start-now-button {
-        left: 20px; 
-        top: 71%; 
-        font-size: 13px;
+        left: 40px; 
+        top: 60%; 
+        font-size: 17px;
         border-radius: 20px;
-        padding: 10px 12px; 
+        padding: 10px 20px;
         
     }
 
     .about-button {
-        left: 20px; 
-        top: 80%; 
-        font-size: 13px;
+        left: 40px; 
+        top: 70%; 
+        font-size: 17px;
         border-radius: 20px;
-        padding: 10px 12px; 
+        padding: 10px 20px; 
         
     }
 
     .copyright{
-        bottom: 15px;
-    }
-
-    .image-copyright {
-        font-size: 6.5px;
-    }
-    
-    .image-copyright {
-        font-size: 6.5px;
-        content: "map source:\A https://i.etsystatic.com/8154243/r/il/3a8544/822567719/il_fullxfull.822567719_c7ol.jpg";
-        white-space: pre; 
+        font-size: 12px;
         left: 10px;
+        bottom: 12px;
     }
-    
-    
-
+        
+    .image-copyright{
+        position: absolute;
+        color: rgb(192, 192, 192);
+        font-size: 12px;
+        left: 10px;
+        bottom: -03px;
+    }
 }
+
