@@ -1,8 +1,8 @@
-body{
+body {
     background-color: white;
     font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
     font-weight: bold;
-
+    overflow: hidden; /* Prevent scrolling on both axes */
 }
 
 .transition-layer {
@@ -29,7 +29,6 @@ body{
     filter: blur(10px);
 }
 
-
 .container {
     display: flex;
     align-items: flex-start; /* Align items to the top */
@@ -38,8 +37,8 @@ body{
 
 svg {
     scale: 1.5;
-    height:550px;
-    margin-left:-17%;
+    height: 550px;
+    margin-left: -17%;
 }
 
 .back-to-start-button {
@@ -118,6 +117,7 @@ h1 {
     
     /* Transition properties for smooth fade-in/out */
     transition: opacity 0.5s ease, visibility 0.5s ease;
+    z-index: 1000;  
 }
 
 .content-container.visible {
@@ -126,28 +126,34 @@ h1 {
     z-index: 1000;                          /* Ensure it appears on top of other content */
 }
 
+.image-copyright {
+    position: fixed;               /* Fix the copyright to the top-right corner */
+    color: rgb(192, 192, 192);
+    font-size: 6px;                /* 50% smaller font size */
+    right: 2%;                     /* Adjust from right */
+    top: 2%;                       /* Adjust from top */
+    z-index: 1;
+    width: auto;                    /* Allow width to adjust based on content */
+}
+
 @media (min-width: 1000px) {
     svg {
-    scale: 1;
-    height:650px;
-    margin-left:25%;
+        scale: 1;
+        height: 650px;
+        margin-left: 25%;
     }
 
     .content-container {
-    font-size: 20px;
-    position: absolute;                     /* Positioning within the body */
-    left: 23.5%;                             /* Center horizontally */
-    top: 25%;                              /* Adjust as needed */
-    transform: translateX(-50%);            /* Center alignment */
-    height: 60%;                            /* Adjust height */
-    width: 40%;                             /* Adjust width */
+        font-size: 20px;
+        position: absolute;                     /* Positioning within the body */
+        left: 23.5%;                             /* Center horizontally */
+        top: 25%;                              /* Adjust as needed */
+        transform: translateX(-50%);            /* Center alignment */
+        height: 60%;                            /* Adjust height */
+        width: 40%;                             /* Adjust width */
     }
 
-    h1{
-        left:2%;
+    h1 {
+        left: 2%;
     }
-
-    
 }
-
-
