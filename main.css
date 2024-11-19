@@ -2,7 +2,7 @@ body {
     background-color: white;
     font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
     font-weight: bold;
-    overflow: hidden; /* Prevent scrolling on both axes */
+    overflow-x: hidden; 
 }
 
 .transition-layer {
