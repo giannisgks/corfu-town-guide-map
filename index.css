@@ -46,7 +46,7 @@ h1 {
     font-size: 120px;
     color: #66bfff;
     left: 7%;
-    top: 30%;
+    top: 25%;
     transform: translateY(-50%);
     text-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
 }
@@ -57,7 +57,7 @@ h2 {
     color: #b6e1ff;
     max-width: 800px;
     left: 7%;
-    top: 50%;
+    top: 53%;
     transform: translateY(-50%);
     text-shadow: 15px 15px 15px rgba(0, 0, 0, 0.2);
     font-style: italic;
