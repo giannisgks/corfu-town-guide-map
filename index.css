@@ -46,7 +46,7 @@ h1 {
     font-size: 120px;
     color: #66bfff;
     left: 7%;
-    top: 25%;
+    top: 30%;
     transform: translateY(-50%);
     text-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
 }
@@ -57,7 +57,7 @@ h2 {
     color: #b6e1ff;
     max-width: 800px;
     left: 7%;
-    top: 53%;
+    top: 50%;
     transform: translateY(-50%);
     text-shadow: 15px 15px 15px rgba(0, 0, 0, 0.2);
     font-style: italic;
@@ -149,7 +149,7 @@ h2 {
     font-size: 20px;
     max-width: 1000px;
     left: 30px;
-    top: 40%;
+    top: 50%;
     }
 
     .start-now-button {
