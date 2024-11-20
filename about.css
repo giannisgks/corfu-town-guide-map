@@ -66,7 +66,7 @@ body {
 .content-container {
     position: absolute;
     left: 48%;
-    top: 20%;
+    top: 15%;
     transform: translateX(-50%);
     text-align: left;
     color: #ffffff;
@@ -76,8 +76,8 @@ body {
     background-color: #2c85d8de;
     box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.7);
     overflow-y: auto;
-    height: 70vh;
-    width: 70%;
+    height: 72vh;
+    width: 82%;
     max-width: 1000px;
 }
 
