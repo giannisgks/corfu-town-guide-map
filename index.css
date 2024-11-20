@@ -131,7 +131,6 @@ h2 {
     bottom: 57px;
     
 }
-
 @media (min-width: 1000px) {
 
     body{
@@ -141,15 +140,15 @@ h2 {
 
     h1 {
     font-size: 80px;
-    left: 30px;
+    left: 40px;
     top: 25%;
     }
 
     h2 {
     font-size: 20px;
-    max-width: 1000px;
-    left: 30px;
-    top: 50%;
+    max-width: 800px;
+    left: 40px;
+    top: 55%;
     }
 
     .start-now-button {
@@ -172,17 +171,9 @@ h2 {
 
     .copyright{
         font-size: 12px;
-        left: 10px;
+        left: 40px;
         bottom: 12px;
     }
-        
-    .image-copyright{
-        position: absolute;
-        color: rgb(192, 192, 192);
-        font-size: 12px;
-        left: 10px;
-        bottom: -03px;
-    }
-}
 
+}
 
