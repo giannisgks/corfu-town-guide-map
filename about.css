@@ -120,7 +120,7 @@ h3 {
 
     .back-to-start-button {
         position: absolute; 
-        left: 7%; 
+        left: 3%; 
         top: 5%; 
         font-size: 17px;
         font-weight: bold;
@@ -130,7 +130,6 @@ h3 {
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
         padding: 10px 20px; 
         cursor: pointer;
-        border: none;
         transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, transform 0.5s ease;
         text-decoration: none;
     }
