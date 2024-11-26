@@ -58,8 +58,9 @@ h2 {
     transform: translateY(-50%);
     text-shadow: 0.9375rem 0.9375rem 0.9375rem rgba(0, 0, 0, 0.2);
     font-style: italic;
-    font-family: 'Dancing Script', cursive;
+    font-family: "Segoe Script", "Comic Sans MS", cursive; /* Fallbacks */
 }
+
 
 .start-now-button {
     position: absolute;
