@@ -67,25 +67,6 @@ svg {
     border: 0.5px solid #2c85d8ba;
 }
 
-.info-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #2c85d8;
-    text-shadow: 5px 0px 10px rgba(0, 0, 0, 0.2);
-    width: 40%;
-    position: fixed; /* or fixed if you want it relative to viewport */
-    top: 12%;
-    left: 2%;
-    z-index: 1001;
-}
-
-
-.pin-icon {
-    width: 13%; /* Adjust size */
-    height: auto;
-}
-
 .image-mapper-shape {
     fill: rgba(53, 41, 41, 0);
     stroke-width: 2px;
@@ -105,7 +86,7 @@ svg {
     color: #2c85d8;
     text-shadow: 5px 0px 10px rgba(0, 0, 0, 0.2);
     width: 80%;
-    position: fixed; /* or fixed if you want it relative to viewport */
+    position: absolute; 
     top: 12%;
     left: 7%;
     z-index: -1;
