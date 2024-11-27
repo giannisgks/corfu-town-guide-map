@@ -153,7 +153,7 @@ svg {
 }
 
 .image-copyright {
-    position: fixed;
+    position: absolute;
     color: rgb(192 192 192 / 43%);
     font-size: 6px;
     right: 2%;
