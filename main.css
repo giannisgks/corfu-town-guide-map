@@ -156,6 +156,9 @@ h1 {
 }
 
 @media (min-width: 1000px) {
+    html, body {
+        overflow: hidden;
+    }
     svg {
         scale: 1;
         height: 650px;
