@@ -89,6 +89,7 @@ svg {
     position: fixed; /* or fixed if you want it relative to viewport */
     top: 12%;
     left: 7%;
+    z-index: -1;
 }
 
 
@@ -111,7 +112,7 @@ svg {
     background-color: #2c85d8bc;
     box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.7);
     overflow-y: auto;
-    height: 60%;
+    height: 65%;
     width: 75%;
     opacity: 0;
     visibility: hidden;
