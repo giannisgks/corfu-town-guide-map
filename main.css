@@ -121,12 +121,10 @@ h1 {
 
 
 .content-image {
-    width: 100%;
-    height: 100%;
+    width: 95%;
     object-fit: contain;
-    border-radius: 10px; /* Adjust the value for more or less rounding */
+    border-radius: 10px; 
 }
-
 
 .image-copyright {
     position: fixed;
