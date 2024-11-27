@@ -5,7 +5,7 @@ html {
 body {
     background-color: white;
     background-size: cover;
-    background-image: url("corfu_back.jpg");
+    background-image: url("collage.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -41,22 +41,22 @@ body {
 h1 {
     position: absolute;
     font-size: clamp(8rem, 10vw, 7.5rem); /* Responsive font size */
-    color: #66bfff;
+    color: #ffffff;
     left: 7%;
     top: 20%;
     transform: translateY(-50%);
-    text-shadow: 0.9375rem 0.9375rem 0.9375rem rgba(0, 0, 0, 0.5);
+    text-shadow: 0.9375rem 0.9375rem 0.9375rem rgba(0, 0, 0, 0.9);
 }
 
 h2 {
     position: absolute;
     font-size: clamp(2.8rem, 4vw, 2.5rem); /* Responsive font size */
-    color: #b6e1ff;
+    color: #f2f2f2;
     max-width: 50rem;
     left: 7%;
     top: 50%;
     transform: translateY(-50%);
-    text-shadow: 0.9375rem 0.9375rem 0.9375rem rgba(0, 0, 0, 0.2);
+    text-shadow: 0.9375rem 0.9375rem 0.9375rem rgba(0, 0, 0, 1);
     font-style: italic;
     font-family: "Segoe Script", "Comic Sans MS", cursive; /* Fallbacks */
 }
@@ -71,9 +71,9 @@ h2 {
     top: 73%;
     font-weight: bold;
     border-radius: 2.5rem;
-    background-color: #0000003d;
-    text-shadow: 0.3125rem 0 0.625rem rgba(0, 0, 0, 0.7);
-    box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.7);
+    background-color: #00000075;
+    text-shadow: 0.3125rem 0 0.625rem rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 1);
     padding: 1rem 2rem;
     cursor: pointer;
     transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, transform 0.5s ease;
@@ -96,9 +96,9 @@ h2 {
     top: 81%;
     font-weight: bold;
     border-radius: 2.5rem;
-    background-color: #0000003d;
-    text-shadow: 0.3125rem 0 0.625rem rgba(0, 0, 0, 0.7);
-    box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.7);
+    background-color: #00000075;
+    text-shadow: 0.3125rem 0 0.625rem rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 1);
     padding: 1rem 2rem;
     cursor: pointer;
 
