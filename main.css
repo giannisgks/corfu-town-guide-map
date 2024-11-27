@@ -82,7 +82,7 @@ svg {
 
 
 .pin-icon {
-    width: 50px; /* Adjust size */
+    width: 13%; /* Adjust size */
     height: auto;
 }
 
@@ -96,6 +96,25 @@ svg {
     fill: rgba(50, 149, 255, 0.512);
     stroke: rgba(255, 255, 0, 0);
     stroke-width: 3px;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #2c85d8;
+    text-shadow: 5px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    position: fixed; /* or fixed if you want it relative to viewport */
+    top: 12%;
+    left: 7%;
+    z-index: 1001;
+}
+
+
+.pin-icon {
+    width: 13%; /* Adjust size */
+    height: auto;
 }
 
 .content-container {
@@ -183,6 +202,12 @@ svg {
     }
 
     h1 {
+        left: 2%;
+    }
+    
+    .info-container {
+        width: 40%;
+        top: 12%;
         left: 2%;
     }
 }
