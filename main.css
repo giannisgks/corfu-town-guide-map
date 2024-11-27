@@ -67,16 +67,23 @@ svg {
     border: 0.5px solid #2c85d8ba;
 }
 
-h1 {
-    position: absolute;
-    color: #658aac75;
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #2c85d8;
+    text-shadow: 5px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 40%;
+    position: fixed; /* or fixed if you want it relative to viewport */
     top: 12%;
-    left: 5%;
-    width: 80%;
-    font-size: 15px;
-    font-weight: bold;
-    font-style: italic;
-    z-index: 1000;
+    left: 2%;
+    z-index: 1001;
+}
+
+
+.pin-icon {
+    width: 50px; /* Adjust size */
+    height: auto;
 }
 
 .image-mapper-shape {
