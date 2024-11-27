@@ -60,7 +60,7 @@ svg {
 }
 
 .back-to-start-button:hover {
-    color: #2c85d8;
+    color: #2c85d84d;
     background-color: white;
     text-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.7);
