@@ -150,6 +150,7 @@ svg {
     width: 95%;
     object-fit: contain;
     border-radius: 10px; 
+    margin-bottom: 10px;
 }
 
 .image-copyright {
