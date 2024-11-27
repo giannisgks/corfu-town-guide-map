@@ -119,22 +119,14 @@ h1 {
     z-index: 1000;
 }
 
-.content-image-container {
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-}
 
 .content-image {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    border-radius: 10px; /* Adjust the value for more or less rounding */
 }
+
 
 .image-copyright {
     position: fixed;
