@@ -120,6 +120,25 @@ h1 {
 }
 
 
+.content-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.content-container::-webkit-scrollbar-thumb {
+    background-color: #2c85d8bc;
+    border-radius: 15px;
+}
+
+.content-container::-webkit-scrollbar-track {
+    background: #f1f1f100;
+}
+
+.content-container::-webkit-scrollbar-thumb:hover {
+    background-color: #4a98d8; 
+}
+
+
+
 .content-image {
     width: 95%;
     object-fit: contain;
