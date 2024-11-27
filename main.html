@@ -391,9 +391,12 @@ function toggleContent(containerId) {
     const selectedContainer = document.getElementById(containerId);
     selectedContainer.classList.toggle("visible");
 
-    // Scroll to the selected container
-    if (selectedContainer.classList.contains("visible")) {
-        selectedContainer.scrollIntoView({ behavior: "smooth", block: "start" });
+    // Apply scroll behavior only for screens with a max width of 600px
+    if (window.matchMedia("(max-width: 600px)").matches) {
+        // Scroll to the selected container
+        if (selectedContainer.classList.contains("visible")) {
+            selectedContainer.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
     }
 }
     </script>
