@@ -169,24 +169,31 @@ svg {
     z-index: -1;
     width: auto;
 }
+
+@media (min-width: 350px) {
+    svg {
+    scale: 1.3;
+    height: 500px;
+    }
+}
 @media (min-width: 430px) {
     svg {
-    scale: 1.5;
-    height: 650px;
+    scale: 1.3;
+    height: 590px;
     }
 }
 
 @media (min-width: 610px) {
     svg {
-    scale: 1.3;
-    height: 750px;
+    scale: 1;
+    height: 560px;
     }
 }
 
 @media (min-width: 720px) {
     svg {
-    scale: 1.3;
-    height: 800px;
+    scale: 0.9;
+    height: 530px;
     }
 
     .content-container{
