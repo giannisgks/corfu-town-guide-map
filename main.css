@@ -201,6 +201,17 @@ svg {
     }
 }
 
+@media (min-width: 810px) {
+    svg {
+    scale: 0.8;
+    height: 580px;
+    }
+
+    .content-container{
+        top: 75%;
+    }
+}
+
 @media (min-width: 940px) {
     html, body {
         overflow: hidden;
