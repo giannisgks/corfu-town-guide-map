@@ -92,13 +92,13 @@ svg {
     z-index: -1;
 }
 
-
 .pin-icon {
     width: 13%; /* Adjust size */
     height: auto;
 }
 
 .content-container {
+    overflow-x: hidden;
     font-size: 12px;
     position: absolute;
     left: 50%;
@@ -146,10 +146,17 @@ svg {
 
 
 
-.content-image {
+.content-image{
     width: 95%;
     object-fit: contain;
     border-radius: 10px; 
+    margin-bottom: 10px;
+}
+
+.audio {
+    width: 95%;
+    object-fit: contain;
+    border-radius: 10px;
     margin-bottom: 10px;
 }
 
