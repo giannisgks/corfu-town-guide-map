@@ -170,41 +170,87 @@ svg {
     width: auto;
 }
 
+@media (min-width: 300px) {
+    svg {
+    scale: 1.3;
+    height: 600px;
+    }
+
+    .content-container{
+        top: 45%;
+    }
+    
+}
+
 @media (min-width: 350px) {
     svg {
     scale: 1.3;
-    height: 500px;
+    height: 570px;
+    }
+
+    .content-container{
+        top: 50%;
     }
 }
+
 @media (min-width: 430px) {
     svg {
     scale: 1.3;
-    height: 590px;
+    height: 630px;
+    }
+
+    .content-container{
+        top: 55%;
+    }
+}
+
+@media (min-width: 510px) {
+    svg {
+    scale: 1.2;
+    height: 610px;
+    }
+
+    .content-container{
+        top: 59%;
     }
 }
 
 @media (min-width: 610px) {
     svg {
     scale: 1;
-    height: 560px;
-    }
-}
-
-@media (min-width: 720px) {
-    svg {
-    scale: 0.9;
-    height: 530px;
+    height: 570px;
     }
 
     .content-container{
-        top: 75%;
+        top: 50%;
+    }
+}
+
+@media (min-width: 670px) {
+    svg {
+    scale: 1;
+    height: 590px;
+    }
+
+    .content-container{
+        top: 50%;
+    }
+}
+@media (min-width: 730px) {
+    svg {
+    scale: 0.9;
+    height: 630px;
+    }
+
+    .content-container{
+        top: 55%;
     }
 }
 
 @media (min-width: 810px) {
     svg {
-    scale: 0.8;
-    height: 580px;
+    scale: 1.15;
+    height: 770px;
     }
 
     .content-container{
