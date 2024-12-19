@@ -177,7 +177,7 @@ svg {
     }
 
     .content-container{
-        top: 45%;
+        top: 65%;
     }
     
 }
@@ -189,7 +189,7 @@ svg {
     }
 
     .content-container{
-        top: 50%;
+        top: 63%;
     }
 }
 
@@ -200,7 +200,7 @@ svg {
     }
 
     .content-container{
-        top: 55%;
+        top: 67%;
     }
 }
 
@@ -211,7 +211,7 @@ svg {
     }
 
     .content-container{
-        top: 59%;
+        top: 69%;
     }
 }
 
@@ -222,7 +222,7 @@ svg {
     }
 
     .content-container{
-        top: 50%;
+        top: 68%;
     }
 }
 
@@ -233,7 +233,7 @@ svg {
     }
 
     .content-container{
-        top: 50%;
+        top: 67%;
     }
 }
 @media (min-width: 730px) {
@@ -243,18 +243,18 @@ svg {
     }
 
     .content-container{
-        top: 55%;
+        top: 70%;
     }
 }
 
 @media (min-width: 810px) {
     svg {
-    scale: 1.15;
-    height: 770px;
+    scale: 1.1;
+    height: 700px;
     }
 
     .content-container{
-        top: 75%;
+        top: 82%;
     }
 }
 
