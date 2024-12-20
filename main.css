@@ -86,7 +86,7 @@ svg {
     color: #2c85d8;
     text-shadow: 5px 0px 10px rgba(0, 0, 0, 0.2);
     width: 80%;
-    position: absolute; /* or fixed if you want it relative to viewport */
+    position: absolute; 
     top: 12%;
     left: 7%;
     z-index: -1;
@@ -173,11 +173,11 @@ svg {
 @media (min-width: 300px) {
     svg {
     scale: 1.3;
-    height: 600px;
+    height: 510px;
     }
 
     .content-container{
-        top: 65%;
+        top: 73%;
     }
     
 }
@@ -189,76 +189,66 @@ svg {
     }
 
     .content-container{
-        top: 63%;
+        top: 73%;
     }
 }
 
 @media (min-width: 430px) {
     svg {
     scale: 1.3;
-    height: 630px;
+    height: 530px;
     }
 
     .content-container{
-        top: 67%;
+        top: 73%;
     }
 }
 
 @media (min-width: 510px) {
     svg {
     scale: 1.2;
-    height: 610px;
+    height: 540px;
     }
 
     .content-container{
-        top: 69%;
+        top: 76%;
     }
 }
 
 @media (min-width: 610px) {
     svg {
     scale: 1;
-    height: 570px;
+    height: 550px;
     }
 
     .content-container{
-        top: 68%;
+        top: 78%;
     }
 }
 
 @media (min-width: 670px) {
     svg {
     scale: 1;
-    height: 590px;
+    height: 530px;
     }
 
     .content-container{
-        top: 67%;
+        top: 79%;
     }
 }
 @media (min-width: 730px) {
     svg {
     scale: 0.9;
-    height: 630px;
+    height: 530px;
     }
 
     .content-container{
-        top: 70%;
+        top: 75%;
     }
 }
 
-@media (min-width: 810px) {
-    svg {
-    scale: 1.1;
-    height: 700px;
-    }
 
-    .content-container{
-        top: 82%;
-    }
-}
-
-@media (min-width: 940px) {
+@media (min-width: 840px) {
     html, body {
         overflow: hidden;
     }
