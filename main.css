@@ -247,6 +247,19 @@ svg {
     }
 }
 
+@media (min-width: 700px) and (min-height: 700px){
+    .info-container{
+        margin-top: -25px;
+    }
+    svg {
+        scale: 0.8;
+        height: 670px;
+    }
+
+    .content-container {
+        top: 75%;
+    }
+}
 
 @media (min-width: 840px) {
     html, body {
