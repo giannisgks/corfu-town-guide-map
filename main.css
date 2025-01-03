@@ -247,19 +247,6 @@ svg {
     }
 }
 
-@media (max-width: 600px) and (max-height: 400px){
-    .info-container{
-        margin-top: 10px;
-    }
-    svg {
-        scale: 0.9;
-        height: 400px;
-    }
-
-    .content-container {
-        top: 115%;
-    }
-}
 
 @media (min-width: 700px) and (min-height: 700px){
     .info-container{
@@ -274,8 +261,25 @@ svg {
         top: 75%;
     }
 }
+@media (max-width: 849px) and (max-height: 500px){
+    .info-container{
+        margin-top: 10px;
+    }
+    .pin-icon{
+        scale: 0.5;
+        margin-left: 10%
+    }
+    svg {
+        scale: 0.9;
+        height: 600px;
+    }
 
-@media (min-width: 840px) {
+    .content-container {
+        margin-top: 35%
+    }
+}
+
+@media (min-width: 850px) {
     html, body {
         overflow: hidden;
     }
