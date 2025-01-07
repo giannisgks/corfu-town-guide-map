@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () { <!--  -->
     const transitionLayer = document.querySelector('.transition-layer');
     const aboutButton = document.querySelector('.about-button');
 
