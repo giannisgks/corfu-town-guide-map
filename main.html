@@ -682,27 +682,25 @@
     
     <script src="transition.js"></script>
     <script>
-    // <![CDATA[  <-- For SVG supporτ
-
-function toggleContent(containerId) {
-    const containers = document.querySelectorAll('.content-container');
-    containers.forEach(container => {
-        if (container.id !== containerId) {
-            container.classList.remove("visible");
-        }
-    });
-
-    const selectedContainer = document.getElementById(containerId);
-    selectedContainer.classList.toggle("visible");
-
-    // Apply scroll behavior only for screens with a max width of 600px
-    if (window.matchMedia("(max-width: 600px)").matches) {
-        // Scroll to the selected container
-        if (selectedContainer.classList.contains("visible")) {
-            selectedContainer.scrollIntoView({ behavior: "smooth", block: "start" });
-        }
-    }
-}
+	function toggleContent(containerId) {
+	    const containers = document.querySelectorAll('.content-container');
+	    containers.forEach(container => {
+	        if (container.id !== containerId) {
+	            container.classList.remove("visible");
+	        }
+	    });
+	
+	    const selectedContainer = document.getElementById(containerId);
+	    selectedContainer.classList.toggle("visible");
+	
+	    // Apply scroll behavior only for screens with a max width of 600px
+	    if (window.matchMedia("(max-width: 600px)").matches) {
+	        // Scroll to the selected container
+	        if (selectedContainer.classList.contains("visible")) {
+	            selectedContainer.scrollIntoView({ behavior: "smooth", block: "start" });
+	        }
+	    }
+	}
     </script>
 </body>
 </html> 
