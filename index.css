@@ -111,7 +111,7 @@ h2 {
 
 .copyright {
     position: absolute;
-    font-size: clamp(0.6rem, 1.5vw, 1.5625rem); 
+    font-size: clamp(0.6rem, 3.5vw, 1.5625rem); 
     color: rgb(255 255 255);
     text-shadow: 0.3125rem 0 0.625rem rgba(0, 0, 0, 1);
     left: 7%;
