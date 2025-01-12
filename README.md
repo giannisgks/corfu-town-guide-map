@@ -8,7 +8,7 @@
 
 ![Screenshot 1](readme_pics/pic1.png)
 ![Screenshot 2](readme_pics/pic2.png)
-
+![Screenshot 3](readme_pics/pic3.png)
 
 14 αξιοθέατα
 περιέxουν:
@@ -25,7 +25,6 @@
 
 ● Φωτογραφίες εσωτερικές
 
-![Screenshot 3](readme_pics/pic4.png)
-![Screenshot 4](readme_pics/pic5.png)
-![Screenshot 5](readme_pics/pic6.png)
-![Screenshot 6](readme_pics/pic7.png)
+![Screenshot 4](readme_pics/pic4.png)
+![Screenshot 5](readme_pics/pic5.png)
+![Screenshot 6](readme_pics/pic6.png)
